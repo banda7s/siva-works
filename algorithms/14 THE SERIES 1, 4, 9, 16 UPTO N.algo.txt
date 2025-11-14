@@ -1,0 +1,15 @@
+#  THE SERIES 1, 4, 9, 16 UPTO N
+
+
+step-1: start
+step-2: print "Upto which number you want to print the series? "
+step-3: read Count
+step-4: print "The series o f square numbers is: 1"
+step-5: Counter = 2
+step-6: Square - Counter * Counter
+step=7: if ( Square <= Count ):
+          print ", " + Square
+          Counter = Counter + 1
+          goto step-6
+step-8: print ".\n"
+step-7: stop
