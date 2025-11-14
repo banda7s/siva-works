@@ -1,0 +1,22 @@
+# To find two numbers by their sum and product
+
+
+step-1: start
+step-2: print "To find two numbers by their sum and product?\n"
+step-3: print "Enter their Sum: "
+step-4: read Sum
+step-5: print "Enter their product: "
+step-6: read Product
+step-7: Num1 = 1
+step-8: Num2 = Sum - 1
+step-9: if (Num1 == Sum):
+          goto step-11
+step-10: if (Num1 + Num2 == Sum):
+           Num1 = Num1 + 1
+           Num2 = Num2 - 1
+           if (Num1 * Num2 == Product): 
+             print "Sum of two number is " + Sum + ", " + "Product of those two numbers is " + Product + "." + "The numbers are " + Num1 + " and " + Num2 + ".\n"
+             goto step-12
+           goto step-9
+step-11: print "There are no integers who sum is " + Sum + " and Product is " + Product + ".\n"
+step-12: stop
