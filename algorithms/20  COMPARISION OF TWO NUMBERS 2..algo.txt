@@ -1,0 +1,15 @@
+#  COMPARISION OF TWO NUMBERS 2
+
+
+step-1: start
+step-2: print " Comparison between two numbers.\n"
+step-3: print " Enter the first number: "
+step-4: read Num1
+step-5: print " Enter the second number: "
+step-6: read Num2
+step-7: Big = " is bigger than "
+step-8: if ( Num1 > Num2 ):
+          print Num1 + Big + Num2 + ".\n"
+step-9: if ( NUM2 > Num1 ):
+          print Num2 + Big + Num1 + ".\n"
+step-10: stop 
