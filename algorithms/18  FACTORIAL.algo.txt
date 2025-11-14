@@ -1,0 +1,14 @@
+#  FACTORIAL
+
+
+step-1: start
+step-2: print "Enter the valve of factorial: "
+step-3: read Num
+step-4: Counter = Num
+step-5: print "The value of " + Num + " factorial is: "
+step-6: if ( Counter > 1 ):
+          Counter = Counter - 1
+          Num = Num * Counter
+          goto step-6
+step-7: print Num + ".\n"
+step-8: stop
