@@ -18,8 +18,8 @@ int main ()
 {
     
     int count, counter;
-    printf(""How many even numbers you want?");
-    scanf("%i, &count");
+    printf("How many even numbers you want?");
+    scanf("%i", &count);
     counter = 0;
     printf("The first %i even number are %i", count, counter);
     counter = counter + 2;
