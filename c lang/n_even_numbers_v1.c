@@ -18,14 +18,14 @@ int main ()
 {
     
     int count, counter;
-    printf("How many even numbers you want?");
+    printf("How many even numbers you want? ");
     scanf("%i", &count);
-    counter = 0;
-    printf("The first %i even number are %i", count, counter);
-    counter = counter + 2;
+    counter = 2;
+    printf("The first %i even number are 0", count);
     while ( counter < count * 2 )
     {
         printf(", %i", counter);
+        counter = counter + 2;
     }
     printf(".\n");
 
