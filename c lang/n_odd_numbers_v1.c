@@ -21,7 +21,7 @@ int main ()
     printf("How many odd numbers you want? ");
     scanf("%i", &count);
     counter = 3;
-    printf("The first %i even number are 1", count);
+    printf("The first %i odd number are 1", count);
     while ( counter < count * 2 )
     {
         printf(", %i", counter);
