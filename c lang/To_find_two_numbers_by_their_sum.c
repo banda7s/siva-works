@@ -16,7 +16,7 @@ step-10: if (Num1 + Num2 == Sum):
              print "Sum of two number is " + Sum + ", " + "Product of those two numbers is " + Product + "." + "The numbers are " + Num1 + " and " + Num2 + ".\n"
              goto step-12
            goto step-9
-step-11: print "There are no integers who sum is " + Sum + " and Product is " + Product + ".\n"
+step-11: print "There are no integers whose sum is " + Sum + " and Product is " + Product + ".\n"
 step-12:stop
 */
 
@@ -32,20 +32,24 @@ int main()
 	scanf("%i", &product);
 	num1 = 1;
 	num2 = sum - 1;
+START:
 	if ( num1 == sum )
 	{
-		printf("There are no integers who sum is %i and product is %i .\n", sum, product);
+		goto EXIT1;
 	}
-	if ( num1 + num2 == sum)
+	while ( num1 + num2 == sum)
 	{
 		num1 = num1 + 1;
 		num2 = num2 - 1;
 		if( num1 * num2 == product)
 		{
 			printf("sum of two number is %i product of those two numbers is %i. The numbers are %i and %i.\n", sum, product, num1, num2);
+			goto EXIT2;
 		}
-		printf("There are no integers who sum is %i and product is %i .\n", sum, product);
+		goto START;
 	}
-
+EXIT1:
+	printf("There are no integers whose sum is %i and product is %i .\n", sum, product);
+EXIT2:
 	return 0;
 }
